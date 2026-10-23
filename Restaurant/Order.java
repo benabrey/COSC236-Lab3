@@ -5,11 +5,12 @@ import java.util.List;
 
 public class Order {
     private List<MenuItem> items = new ArrayList<>();
-    
+
     public void addItem(MenuItem item) {
         items.add(item);
+        System.out.println("Item " + item.getName() + " added");
     }
-    
+
     public double calculateTotal() {
         double total = 0;
         for (MenuItem item : items) {
